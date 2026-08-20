@@ -1,4 +1,4 @@
-import { data } from "framer-motion/client";
+// import { data } from "framer-motion/client";
 
 export interface Project {
   id: string;
