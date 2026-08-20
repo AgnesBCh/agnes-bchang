@@ -31,7 +31,7 @@ export const projectsData: Project[] = [
     shortDescription: "Sistema de consulta de información mediante búsqueda semántica.",
     businessProblem: "El cliente necesitaba reducir el tiempo de búsqueda en documentos extensos. Implementé una solución que permite consultar información corporativa utilizando búsqueda semántica mediante embeddings y una base de datos vectorial.",
     myRole: "Diseño de arquitectura, integración de IA y desarrollo Backend/Frontend.",
-    technologies: ["Python", "React", "Embeddings", "Vector DB", "Azure Functions"],
+    technologies: ["Python", "React", "Embeddings", "Vector DB", "Azure Functions."],
     projectType: "IA & Automatización",
     imageUrl: "[URL_DE_IMAGEN_O_PLACEHOLDER]",
     demoVideo: "[URL_DEL_VIDEO_DE_DEMOSTRACION]",
