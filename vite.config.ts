@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/agnes-bchang', // Configuración para que las rutas relativas funcionen correctamente
 })
