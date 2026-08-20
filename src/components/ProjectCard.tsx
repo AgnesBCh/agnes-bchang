@@ -43,6 +43,14 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
             <p className="text-slate-600 text-sm leading-relaxed">{project.businessProblem}</p>
           </div>
 
+           <div className="mb-5">
+            <h4 className="text-sm font-semibold text-indigo-500 mb-1 flex items-center gap-2 group-hover:text-indigo-600 transition-colors">
+              <div className="w-1.5 h-1.5 rounded-full bg-indigo-400 group-hover:bg-indigo-600 group-hover:scale-150 transition-all" />
+              Rol:
+            </h4>
+            <p className="text-slate-600 text-sm leading-relaxed">{project.myRole}</p>
+          </div>
+
           <div className="mb-6 flex-grow">
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech) => (

@@ -4,7 +4,7 @@ import { ChevronRight, Download, Mail, Cpu, Database, Bot } from 'lucide-react';
 import ProjectCard from './components/ProjectCard';
 import AnimatedBackground from './components/AnimatedBackground';
 import { stackData, projectsData } from './data/portafolioData';
-
+import miFoto from './assets/mi-foto.jpeg';
 // SVGs puros
 const GithubIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>;
 const LinkedinIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>;
@@ -50,7 +50,7 @@ function App() {
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-indigo-50 border border-indigo-100 text-indigo-700 rounded-full text-sm font-bold mb-6 hover:bg-indigo-100 transition-colors cursor-default">
               <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
-              Desarrolladora & Ingeniera de Sistemas
+              Desarrolladora & Ingeniera de Industrial y de Sistemas
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-tight mb-6 tracking-tight">
@@ -62,7 +62,7 @@ function App() {
             </h1>
 
             <p className="text-lg text-slate-600 mb-10 leading-relaxed max-w-lg">
-              Especialista en desarrollo web, automatización e integración de <strong className="text-blue-600 font-bold">IA</strong>. Diseño arquitecturas tecnológicas enfocadas en la eficiencia y el negocio.
+              Especialista en desarrollo web, automatización e integración de <strong className="text-blue-600 font-bold">IA</strong>, con interés creciente en  <strong className="text-blue-600 font-bold">Cloud y arquitecturas AWS</strong> . Combino tecnología y visión de negocio para diseñar soluciones eficientes, escalables y orientadas a resultados. También participo en la comunidad tecnológica como <strong className="text-blue-600 font-bold">coorganizadora de AWS User Group</strong> y ponente en formación.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -80,7 +80,7 @@ function App() {
             
             <motion.div whileHover={{ scale: 1.02 }} className="relative w-72 h-72 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-slate-200 z-10 group cursor-pointer">
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" 
+                src={miFoto}
                 alt="Mi foto de perfil" 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -104,7 +104,7 @@ function App() {
             Más allá del código
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
-            Mi formación como <span className="text-blue-600 font-semibold">Ingeniera Industrial y de Sistemas</span> me permite abordar el desarrollo de software desde una perspectiva estratégica. No solamente desarrollo interfaces; analizo el problema de negocio, diseño la solución tecnológica más eficiente y la llevo a una implementación funcional. Combino la lógica de procesos con tecnologías modernas para crear herramientas que automatizan flujos, integran IA y mejoran la conversión.
+            Mi formación como <span className="text-blue-600 font-semibold">Ingeniera Industrial y de Sistemas</span> en la<span className="text-blue-600 font-semibold"> Universidad de Piura</span>, me permite abordar el desarrollo de software desde una perspectiva estratégica. No solamente desarrollo interfaces; analizo el problema de negocio, diseño la solución tecnológica más eficiente y la llevo a una implementación funcional. Combino la lógica de procesos con tecnologías modernas para crear herramientas que automatizan flujos, integran IA y mejoran la conversión.
           </p>
         </div>
       </section>
@@ -165,7 +165,7 @@ function App() {
             Abierta a nuevos desafíos en automatización, IA y desarrollo web corporativo.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="mailto:[TU_EMAIL]" className="flex items-center gap-2 px-8 py-4 bg-blue-600 text-white font-bold rounded-xl shadow-lg shadow-blue-200 hover:bg-cyan-600 hover:shadow-cyan-200 transition-all">
+            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="mailto:agneschang0601@gmail.com" className="flex items-center gap-2 px-8 py-4 bg-blue-600 text-white font-bold rounded-xl shadow-lg shadow-blue-200 hover:bg-cyan-600 hover:shadow-cyan-200 transition-all">
               <Mail size={18} /> Hablemos por Email
             </motion.a>
             <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="[URL_LINKEDIN]" target="_blank" className="flex items-center gap-2 px-8 py-4 bg-white text-[#0A66C2] border border-[#0A66C2]/20 font-bold rounded-xl hover:bg-[#0A66C2] hover:text-white transition-all shadow-sm">
