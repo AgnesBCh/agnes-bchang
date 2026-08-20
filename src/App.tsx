@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { ChevronRight, Download, Mail, Cpu, Database, Bot } from 'lucide-react';
 import ProjectCard from './components/ProjectCard';
