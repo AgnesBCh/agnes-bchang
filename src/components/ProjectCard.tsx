@@ -23,7 +23,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           <img 
             src={project.imageUrl !== "[URL_DE_IMAGEN_O_PLACEHOLDER]" ? project.imageUrl : "/api/placeholder/800/600"} 
             alt={project.title} 
-            className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500 ease-out"
+            className="object-contain w-full h-full transform group-hover:scale-105 transition-transform duration-500 ease-out"
           />
           <span className="absolute top-4 right-4 z-20 bg-white/95 text-blue-700 border border-blue-100 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
             {project.projectType}
@@ -40,16 +40,39 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
               <div className="w-1.5 h-1.5 rounded-full bg-indigo-400 group-hover:bg-indigo-600 group-hover:scale-150 transition-all" />
               Solución de Negocio
             </h4>
-            <p className="text-slate-600 text-sm leading-relaxed">{project.businessProblem}</p>
+            <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-line">{project.businessProblem}</p>
           </div>
 
-           <div className="mb-5">
-            <h4 className="text-sm font-semibold text-indigo-500 mb-1 flex items-center gap-2 group-hover:text-indigo-600 transition-colors">
+         <div className="mb-5">
+            <h4 className="text-sm font-semibold text-indigo-500 mb-2 flex items-center gap-2 group-hover:text-indigo-600 transition-colors">
               <div className="w-1.5 h-1.5 rounded-full bg-indigo-400 group-hover:bg-indigo-600 group-hover:scale-150 transition-all" />
               Rol:
             </h4>
-            <p className="text-slate-600 text-sm leading-relaxed">{project.myRole}</p>
+            
+            {/* Lógica para dibujar lista o texto normal */}
+            {Array.isArray(project.myRole) ? (
+              <ul className="text-slate-600 text-sm leading-relaxed space-y-1">
+                {project.myRole.map((role, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <span className="text-blue-500 font-bold mt-0.5">•</span>
+                    <span>{role}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-slate-600 text-sm leading-relaxed">{project.myRole}</p>
+            )}
           </div>
+
+      <div className="mb-5 flex items-center gap-2 text-sm">
+        <span className="text-slate-400">
+          Tipo de proyecto
+        </span>
+
+        <span className="text-slate-700 font-semibold">
+          {project.tipoProyecto}
+        </span>
+      </div>
 
           <div className="mb-6 flex-grow">
             <div className="flex flex-wrap gap-2">

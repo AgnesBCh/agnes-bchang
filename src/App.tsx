@@ -168,7 +168,7 @@ function App() {
             <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="mailto:agneschang0601@gmail.com" className="flex items-center gap-2 px-8 py-4 bg-blue-600 text-white font-bold rounded-xl shadow-lg shadow-blue-200 hover:bg-cyan-600 hover:shadow-cyan-200 transition-all">
               <Mail size={18} /> Hablemos por Email
             </motion.a>
-            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="[URL_LINKEDIN]" target="_blank" className="flex items-center gap-2 px-8 py-4 bg-white text-[#0A66C2] border border-[#0A66C2]/20 font-bold rounded-xl hover:bg-[#0A66C2] hover:text-white transition-all shadow-sm">
+            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="https://www.linkedin.com/in/agnes-buscal-chang-22742b151" target="_blank" className="flex items-center gap-2 px-8 py-4 bg-white text-[#0A66C2] border border-[#0A66C2]/20 font-bold rounded-xl hover:bg-[#0A66C2] hover:text-white transition-all shadow-sm">
               <LinkedinIcon size={18} /> LinkedIn
             </motion.a>
             <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="[URL_GITHUB]" target="_blank" className="flex items-center gap-2 px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-indigo-600 transition-colors shadow-lg">
