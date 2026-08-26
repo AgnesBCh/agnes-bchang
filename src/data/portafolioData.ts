@@ -6,6 +6,7 @@ import logo_BioSpace_Navigator from '../../public/proyectos/BioSpace_Navigator.p
 
 
 import video_UDEP_IE from '../../public/proyectos/UDEP-IE.mp4'
+import video_Biospace_Navigator from '../../public/proyectos/BiospaceNavigator.mp4'
 export interface Project {
   id: string;
   title: string;
@@ -40,7 +41,6 @@ export const projectsData: Project[] = [
                       
                       La plataforma incorpora un buscador inteligente basado en búsqueda semántica y RAG, además de un Backend en PocketBase para gestionar productos e imágenes. Su arquitectura está preparada para incorporar nuevas funcionalidades como carrito de compras y pagos en línea.`,
     myRole: ["Creadora y desarrolladora del proyecto.", 
-              "Responsable del diseño y desarrollo Frontend completo", 
               "Responsable del diseño y desarrollo Frontend completo", 
               "Implementación del buscador inteligente e integración con el Backend y sus APIs."],
     technologies: ["React", "JavaScript", "Tailwind CSS", "PocketBase", "APIs REST", "RAG","Embeddings","Búsqueda semántica"],
@@ -90,7 +90,7 @@ export const projectsData: Project[] = [
     technologies: ["Python", "Vanilla JS", "LLM", "RAG", "Embeddings", "Vector Database", "Generative AI API","Azure Functions"],
     projectType: "IA & Automatización",
     imageUrl: logo_BioSpace_Navigator,
-    demoVideo: "[URL_DEL_VIDEO_DE_DEMOSTRACION]",
+    demoVideo: video_Biospace_Navigator,
     liveUrl: null,
     githubUrl: null,
     tipoProyecto: "Nasa Space Apps Challenge - 4º lugar"
