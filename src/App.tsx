@@ -69,8 +69,8 @@ function App() {
               <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="#proyectos" className="group flex items-center gap-2 px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl shadow-lg shadow-blue-200 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-300 transition-all">
                 Ver proyectos <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </motion.a>
-              <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="[URL_TU_CV]" target="_blank" className="flex items-center gap-2 px-8 py-4 bg-white text-slate-700 border border-slate-200 font-semibold rounded-xl hover:border-blue-300 hover:text-blue-700 hover:bg-blue-50 transition-all shadow-sm">
-                <Download size={18} /> Descargar CV
+              <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/CV_AgnesBuscalChang.pdf" target="_blank" className="flex items-center gap-2 px-8 py-4 bg-white text-slate-700 border border-slate-200 font-semibold rounded-xl hover:border-blue-300 hover:text-blue-700 hover:bg-blue-50 transition-all shadow-sm">
+                <Download size={18} /> Ver CV
               </motion.a>
             </div>
           </div>
@@ -171,9 +171,9 @@ function App() {
             <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="https://www.linkedin.com/in/agnes-buscal-chang-22742b151" target="_blank" className="flex items-center gap-2 px-8 py-4 bg-white text-[#0A66C2] border border-[#0A66C2]/20 font-bold rounded-xl hover:bg-[#0A66C2] hover:text-white transition-all shadow-sm">
               <LinkedinIcon size={18} /> LinkedIn
             </motion.a>
-            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="[URL_GITHUB]" target="_blank" className="flex items-center gap-2 px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-indigo-600 transition-colors shadow-lg">
+            {/* <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="[URL_GITHUB]" target="_blank" className="flex items-center gap-2 px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-indigo-600 transition-colors shadow-lg">
               <GithubIcon size={18} /> GitHub
-            </motion.a>
+            </motion.a> */}
           </div>
         </div>
       </section>

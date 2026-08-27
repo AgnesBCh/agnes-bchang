@@ -3,10 +3,13 @@ import logo_Innova from '../../public/proyectos/UDEP_IE.svg'
 import logo_Sispre from '../../public/proyectos/Sipre.png'
 import logo_OneLearning from '../../public/proyectos/One_Learning.png'
 import logo_BioSpace_Navigator from '../../public/proyectos/BioSpace_Navigator.png'
+import logo_Lira_Lino from '../../public/proyectos/Lira_Lino.svg'
+import logo_Geo_Hidro_LLM from '../../public/proyectos/Geo_Hidro_LLM.png'
 
 
 import video_UDEP_IE from '../../public/proyectos/UDEP-IE.mp4'
 import video_Biospace_Navigator from '../../public/proyectos/BiospaceNavigator.mp4'
+import video_Geo_Hidro_LLM from '../../public/proyectos/Geo_Hidro_LLM.mp4'
 export interface Project {
   id: string;
   title: string;
@@ -45,11 +48,11 @@ export const projectsData: Project[] = [
               "Implementación del buscador inteligente e integración con el Backend y sus APIs."],
     technologies: ["React", "JavaScript", "Tailwind CSS", "PocketBase", "APIs REST", "RAG","Embeddings","Búsqueda semántica"],
     projectType: "Web & IA",
-    imageUrl: "[URL_DE_IMAGEN_O_PLACEHOLDER]",
-    liveUrl: "https://onelearning.pe",
-    demoVideo: "[URL_DEL_VIDEO_DE_DEMOSTRACION]",
+    imageUrl: logo_Lira_Lino,
+    liveUrl: "https://abuelita-artesanias-mauve.vercel.app",
+    // demoVideo: "[URL_DEL_VIDEO_DE_DEMOSTRACION]",
     githubUrl: null,
-    tipoProyecto: "Personal"
+    tipoProyecto: "Personal / En desarrollo"
   },
   {
     id: "1",
@@ -67,8 +70,8 @@ export const projectsData: Project[] = [
     ],
     technologies: ["Python", "React","PostGIS", "RAG", "Embeddings", "Vector Database", "Azure Functions.", "LLM"],
     projectType: "IA & Automatización",
-    imageUrl: "[URL_DE_IMAGEN_O_PLACEHOLDER]",
-    demoVideo: "[URL_DEL_VIDEO_DE_DEMOSTRACION]",
+    imageUrl: logo_Geo_Hidro_LLM,
+    demoVideo: video_Geo_Hidro_LLM,
     liveUrl: null,
     githubUrl: null,
     tipoProyecto: "Concurso GEOTÓN PERÚ"
