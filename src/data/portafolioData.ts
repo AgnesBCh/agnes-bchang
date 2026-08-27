@@ -138,7 +138,7 @@ export const projectsData: Project[] = [
     projectType: "Web & Conversión",
     imageUrl: logo_OneLearning,
     liveUrl: "https://onelearning.pe",
-    demoVideo: "[URL_DEL_VIDEO_DE_DEMOSTRACION]",
+    // demoVideo: "[URL_DEL_VIDEO_DE_DEMOSTRACION]",
     githubUrl: null,
     tipoProyecto: "Corporativo - Freelance"
   },
