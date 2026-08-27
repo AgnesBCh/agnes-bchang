@@ -69,7 +69,7 @@ function App() {
               <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="#proyectos" className="group flex items-center gap-2 px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl shadow-lg shadow-blue-200 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-300 transition-all">
                 Ver proyectos <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </motion.a>
-              <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/CV_AgnesBuscalChang.pdf" target="_blank" className="flex items-center gap-2 px-8 py-4 bg-white text-slate-700 border border-slate-200 font-semibold rounded-xl hover:border-blue-300 hover:text-blue-700 hover:bg-blue-50 transition-all shadow-sm">
+              <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/agnes-bchang/CV_AgnesBuscalChang.pdf" target="_blank" className="flex items-center gap-2 px-8 py-4 bg-white text-slate-700 border border-slate-200 font-semibold rounded-xl hover:border-blue-300 hover:text-blue-700 hover:bg-blue-50 transition-all shadow-sm">
                 <Download size={18} /> Ver CV
               </motion.a>
             </div>
